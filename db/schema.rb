@@ -10,39 +10,126 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_05_092346) do
-  create_table "schools", force: :cascade do |t|
-    t.string "name"
-    t.string "registration"
-    t.string "address"
-    t.string "city"
+ActiveRecord::Schema[7.0].define(version: 2022_11_03_185000) do
+  create_table "admins", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string "email"
-    t.string "phone"
-    t.string "website"
-    t.string "logo"
-    t.integer "user_id"
+    t.string "full_name"
+    t.string "password_digest"
+    t.string "user_name"
+    t.string "role"
+    t.string "username"
+  end
+
+  create_table "assessments", force: :cascade do |t|
+    t.string "name"
+    t.integer "subject_id"
+    t.integer "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "assignments", force: :cascade do |t|
+    t.string "name"
+    t.integer "subject_id"
+    t.string "due_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "classrooms", force: :cascade do |t|
+    t.string "name"
+    t.integer "teacher_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "parents", force: :cascade do |t|
+    t.string "role"
+    t.string "address"
+    t.string "phone_no"
+    t.string "full_name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "username"
+  end
+
+  create_table "staffs", force: :cascade do |t|
+    t.string "full_name"
+    t.string "post"
+    t.string "image"
+    t.string "department"
+    t.string "phone_no"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "student_assesments", force: :cascade do |t|
+    t.integer "assessment_id"
+    t.integer "student_id"
+    t.integer "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "student_assignments", force: :cascade do |t|
+    t.integer "student_id"
+    t.integer "assignment_id"
+    t.integer "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "students", force: :cascade do |t|
-    t.string "name"
-    t.string "registration"
+    t.string "role"
+    t.string "gender"
+    t.string "image"
+    t.integer "parent_id"
+    t.string "phone_no"
+    t.integer "admission_no"
+    t.integer "subject_id"
+    t.string "full_name"
     t.string "email"
-    t.string "phone"
-    t.integer "school_id", null: false
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["school_id"], name: "index_students_on_school_id"
+    t.string "classroom_id"
+    t.string "username"
+  end
+
+  create_table "subject_teachers", force: :cascade do |t|
+    t.integer "teacher_id"
+    t.integer "subject_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "subjects", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teachers", force: :cascade do |t|
+    t.string "role"
+    t.string "gender"
+    t.string "image"
+    t.string "phone_no"
+    t.string "address"
+    t.string "full_name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "username"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
-    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "students", "schools"
 end
