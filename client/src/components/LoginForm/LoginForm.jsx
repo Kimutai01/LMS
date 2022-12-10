@@ -135,7 +135,7 @@ function LoginForm({ setUser }) {
   }
   return (
     <div className="form-container">
-      <h3 className="text-center p-6 text-4xl font- ">LOGIN</h3>
+      <h3 className="text-center p-6 text-4xl font-medium ">LOGIN</h3>
       {/* <h1 className="text-center p-6 text-4xl font-medium text-black">Select User: </h1> */}
       <Box
         sx={{
@@ -157,7 +157,7 @@ function LoginForm({ setUser }) {
         </Tabs>
       </Box>
       <form className=" w-2/3 my-6 mx-auto flex flex-col">
-        <label style={{color:'#1EB2A6'}} htmlFor="username" className="text-xl">
+        <label style={{color:'#ACBABF'}} htmlFor="username" className="text-xl">
           Username:
         </label>
         <input
@@ -168,7 +168,7 @@ function LoginForm({ setUser }) {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <label style={{color:'#1EB2A6'}} htmlFor="password" className="mt-5 text-xl">
+        <label style={{color:'#ACBABF'}} htmlFor="password" className="mt-5 text-xl">
           Password:
         </label>
         <input
@@ -195,7 +195,7 @@ function LoginForm({ setUser }) {
               type="submit"
               onClick={handleAdminSubmit}
               // className="bg-[#1C1AB1] hover:bg-blue-700 mt-2 w-1/3 mx-auto text-white font-bold py-2 px-4 rounded"
-              className="bg-[#1EB2A6] hover:bg-[#ADD7E0] -700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
+              className="bg-[#1C1AB1] hover:bg-blue-700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
             >
               Log in
             </button>
@@ -204,7 +204,7 @@ function LoginForm({ setUser }) {
             <button
               type="submit"
               onClick={handleTeacherSubmit}
-              className="bg-[#1EB2A6] hover:bg-[#ADD7E0] -700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
+              className="bg-[#1C1AB1] hover:bg-blue-700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
             >
               Log in
             </button>
@@ -213,7 +213,7 @@ function LoginForm({ setUser }) {
             <button
               type="submit"
               onClick={handleStudentSubmit}
-              className="bg-[#1EB2A6] hover:bg-[#ADD7E0] -700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
+              className="bg-[#1C1AB1] hover:bg-blue-700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
             >
               Log in
             </button>
@@ -222,7 +222,7 @@ function LoginForm({ setUser }) {
             <button
               type="submit"
               onClick={handleParentSubmit}
-              className="bg-[#1EB2A6] hover:bg-[#ADD7E0] -700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
+              className="bg-[#1C1AB1] hover:bg-blue-700 mt-2  mx-auto text-white font-bold py-2 px-4 rounded"
             >
               Log in
             </button>

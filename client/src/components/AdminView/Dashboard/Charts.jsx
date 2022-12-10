@@ -31,7 +31,7 @@ function Charts() {
           <Tooltip />
           <Legend />
           <CartesianGrid strokeDasharray="3 3" />
-          <Bar dataKey="value" fill="#1EB2A6" background={{ fill: '#eee' }} />
+          <Bar dataKey="value" fill="#8884d8" background={{ fill: '#eee' }} />
         </BarChart>
       
      
