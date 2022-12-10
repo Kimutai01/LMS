@@ -13,7 +13,7 @@ teacher3 = Teacher.create(username: "John", email: "john@gmail.com", role: "teac
 teacher2 = Teacher.create(username: "rebecca", email: "becky@gmail.com", role: "teacher", password: "becky", full_name: "Rebecca Kimanu", address:"Nakuru", phone_no: "0743567890", gender: "Female", image: "https://images.unsplash.com/photo-1669764220821-fbdca4729b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8dG93SlpGc2twR2d8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60")
 
 
-parent1 = Parent.create(role: "parent", address:"Eldoret", phone_no: "0755663sd", full_name:"Chris John",email:"john@gmail.com",password:"john", username: "john")
+parent1 = Parent.create(role: "parent", address:"Eldoret", phone_no: "0755663", full_name:"Chris John",email:"john@gmail.com",password:"john", username: "john")
 parent2 = Parent.create(username: "Winston", address:"Ruiru", phone_no: "0723454332", email: "winston@gmail.com", role: "parent", password: "winston", full_name: "Winston Karanja")
 parent3 = Parent.create(username: "tim", address:"21 South", phone_no: "0744553344", email: "tim@gmail.com", role: "parent", password: "tim", full_name: "Tim Kut")
 
