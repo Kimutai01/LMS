@@ -31,8 +31,6 @@ This user has access and authority to following :
 
 
 #### Students
-
-The students take exams, tests, assessments online. The process should be timed. 
 <br/>
 &check; The students take exams, tests, assessments online.
 <br/>
