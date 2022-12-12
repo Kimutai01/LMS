@@ -32,7 +32,7 @@ function Navbar({ user, setUser }) {
         }).then((r) => {
           if (r.ok) {
             setUser(null);
-            console.log(user)
+            console.log(user);
             navigate("/");
           }
         });
@@ -52,7 +52,7 @@ function Navbar({ user, setUser }) {
   return (
     <nav
       className="flex items-center justify-between flex-wrap  p-6"
-      style={{ backgroundColor: "#ffff", color:'#1EB2A6' }}
+      style={{ backgroundColor: "#ffff", color: "#1EB2A6" }}
     >
       <Link
         to="/"
@@ -63,11 +63,8 @@ function Navbar({ user, setUser }) {
           fontFamily: "cursive",
           color: "#1EB2A6",
         }}
-        >
-        <div>
-        ABC SCHOOLS
-        {/* <i class="fas fa-graduation-cap"></i> */}
-        </div>
+      >
+        <div>ABC SCHOOLS</div>
       </Link>
       {user ? (
         <h1 style={{fontSize:'20px', fontFamily:'cursive', fontWeight:'bold'}} className=" hover:text-black-200 ">
@@ -75,12 +72,17 @@ function Navbar({ user, setUser }) {
         </h1>
       ) : null}
       {user ? (
-        <button style={{fontFamily:'inherit', fontWeight:'bolder'}}
-          className="btn-lg btn-light" data-mdb-ripple-color="light"
+        <button
+          style={{ fontFamily: "inherit", fontWeight: "bolder" }}
+          className="btn-lg btn-light"
+          data-mdb-ripple-color="light"
           onClick={handleLogout}
         >
           LOGOUT
-          <FaPowerOff style={{color:'#1EB2A6'}} className="inline ml-2 mb-1" />
+          <FaPowerOff
+            style={{ color: "#1EB2A6" }}
+            className="inline ml-2 mb-1"
+          />
         </button>
       ) : (
         <Link
@@ -88,7 +90,6 @@ function Navbar({ user, setUser }) {
             fontSize: "28px",
             fontWeight: "bold",
             fontFamily: "cursive",
-            
           }}
           to="/login"
         >

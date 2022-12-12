@@ -100,24 +100,24 @@ function AddAssessment() {
             <hr></hr>
           </h1>
           <form className="flex flex-col text-center font-black p-4">
-          <TextField
-            id="Assessment Name"
-            label="Assessment Name"
-            variant="outlined"
-            className="w-1/3 mx-auto"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+            <TextField
+              id="Assessment Name"
+              label="Assessment Name"
+              variant="outlined"
+              className="w-1/3 mx-auto"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
 
-          <TextField
-            id="Total"
-            type="number"
-            label="Total"
-            variant="outlined"
-            className="w-1/3 mx-auto mt-3"
-            value={total}
-            onChange={(e) => setTotal(e.target.value)}
-          />
+            <TextField
+              id="Total"
+              type="number"
+              label="Total"
+              variant="outlined"
+              className="w-1/3 mx-auto mt-3"
+              value={total}
+              onChange={(e) => setTotal(e.target.value)}
+            />
             {errors.map((error) => {
               return (
                 <div
