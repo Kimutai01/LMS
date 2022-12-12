@@ -44,6 +44,7 @@ The students take exams, tests, assessments online. The process should be timed.
 #### The following technologies was used to build the front-end of applications <br/>
 
 &check; React. <br/>
+&check; Material UI. <br/>
 &check; Tailwind Css. <br/>
 
 #### The following technologies was used to build the back-end of applications <br/>
