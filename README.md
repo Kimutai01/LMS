@@ -31,8 +31,6 @@ This user has access and authority to following :
 
 
 #### Students
-
-The students take exams, tests, assessments online. The process should be timed. 
 <br/>
 &check; The students take exams, tests, assessments online.
 <br/>
@@ -54,8 +52,8 @@ The students take exams, tests, assessments online. The process should be timed.
 
 
 
-### 3. [Live site](https:///)
-&nbsp; Here [www.lms.com](https://ilyasosman.github.io/cryptoPesa-website/) is cryptopesa live website accessible to the public<br/>
+### 3. [Live site](https://)
+&nbsp; Here [www.lms.com](https:/)<br/>
 
 [Live Site screenshot](http:///)
 
