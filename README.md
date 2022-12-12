@@ -53,7 +53,7 @@ The students take exams, tests, assessments online. The process should be timed.
 
 
 
-### 3. [Live site](https:///)
+### 3. [Live site](https://)
 &nbsp; Here [www.lms.com](https:/)<br/>
 
 [Live Site screenshot](http:///)
