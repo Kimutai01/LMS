@@ -31,7 +31,6 @@ This user has access and authority to following :
 
 
 #### Students
-<br/>
 &check; The students take exams, tests, assessments online.
 <br/>
 &check;  The students can access resources posted by educators.
