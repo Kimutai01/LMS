@@ -71,7 +71,7 @@ function Navbar({ user, setUser }) {
       </Link>
       {user ? (
         <h1 style={{fontSize:'20px', fontFamily:'cursive', fontWeight:'bold'}} className=" hover:text-black-200 ">
-          Hi {user.username} &#128522;
+          Hello {user.username}
         </h1>
       ) : null}
       {user ? (

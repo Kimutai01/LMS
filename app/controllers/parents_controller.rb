@@ -36,7 +36,7 @@ parent =Parent.find_by(id: params[:id])
 if parent 
   children = Student.where(parent_id: parent.id)
   if children.length > 0
-    render json: {errors: ["Cannot Delete Parent right now as They currently Have a child/children already enrolled at Edupo School"]}
+    render json: {errors: ["Cannot Delete Parent right now as They currently Have a child/children already enrolled"]}
   else
   parent.destroy
   render json: parent
